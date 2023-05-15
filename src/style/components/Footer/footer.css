@@ -1,0 +1,55 @@
+.footer{
+    height: 20em;
+    /* background-color: #821415; */
+}
+
+.footer__atas{
+    height: 85%;
+    background-color: #821415;display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__atas--about{
+    width: 55%;
+    color: white;
+    
+}
+
+.footer__atas--about h2{
+    width: 25.1%;
+    font-size: 30px;
+    margin-bottom: 10px;
+    padding-bottom: 2px;
+    border-bottom: 3px solid white;
+}
+.footer__atas--about p{
+    font-size: 17px;
+}
+
+.footer__atas--kontak{
+    color: white;
+}
+
+.footer__atas--kontak h2{
+    width: 26%;
+    font-size: 30px;
+    margin-bottom: 5px;
+    border-bottom: 3px solid white;
+}
+
+.footer__atas--kontak ul li{
+    font-size: 17px;
+    list-style-type: none;
+    padding: 5px 0;
+}
+
+.footer__bawah{
+    height: 15%;
+    background-color: #A0001C;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}

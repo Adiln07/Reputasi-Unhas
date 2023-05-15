@@ -1,0 +1,43 @@
+.container{
+    height: 44em;
+    background-image: url(../../../assets/Rektorat2.jpeg);
+    background-size:cover ;
+}
+
+.main__title{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: 0 auto;
+    padding-top:220px;
+}
+
+.main__title :nth-child(1){
+    font-size: 55px;
+}
+.main__title h1{
+    font-size: 40px;
+    color: white;
+    text-shadow: 0px 3px 5px black;
+}
+
+.main__title .univ{
+    width: 32%;
+    margin-top: 5px;
+    background-color: #821415;
+}
+.main__title .univ h2{
+    font-size:25px;
+    padding: 2px 5px;
+    color: white;
+    font-weight: 600;
+    /* background-color: #821415; */
+    text-transform: uppercase;
+}
+
+.main__title h3{
+    margin-top: 2px;
+    color: white;
+    font-style: italic;
+    text-shadow: 0px 3px 5px black;
+}
