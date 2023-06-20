@@ -1,0 +1,51 @@
+.data__fakultas h1{
+    text-align:center;
+    font-size: 50px;
+    padding-top: .5em;
+}
+
+.data__fakultas-table{
+    width: 70%;
+    margin: 3em auto;
+}
+
+.pilih__fakultas{
+    width: 11.5%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    /*gap: 10px;
+    */font-size: 9px;
+    border: 2px solid black;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.pilih__fakultas img{
+    width: 24px;
+}
+
+.data__fakultas-table table{
+    margin-top: .5em;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.data__fakultas-table td,th {
+  
+  text-align: center;
+  padding: 15px;
+}
+
+.data__fakultas-table th{
+    color: white;
+    background-color: black;
+}
+
+tr:nth-child(even) {
+    background-color: #d9d9d9;
+  }
