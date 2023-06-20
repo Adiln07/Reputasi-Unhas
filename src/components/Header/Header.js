@@ -1,6 +1,7 @@
 import React from 'react'
 import  '../../style/components/Header/header.css'
 import Unhas from "../../assets/unhas.png" 
+import { Link } from 'react-router-dom'
 const Header = () => {
   return (
     <div className='header'>
@@ -10,11 +11,11 @@ const Header = () => {
         </div> 
         <div className='nav'>
             <div className='nav-title'>
-            <a src="">Beranda</a>
-            <a>Form</a>
-            {/* <a>Update</a> */}
-            <a>Data Fakultas</a>
-            <a>Tentang Kami</a>
+              <Link to="/">Beranda</Link>
+              <Link to="/formfakultas">Form</Link>
+              {/* <a>Update</a> */}
+              <Link to="/datafakultas">Data Fakultas</Link>
+              <Link to="/about">Tentang Kami</Link>
             </div>
             <div className='signIn'>
                 <a>Masuk</a>
