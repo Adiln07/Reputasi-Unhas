@@ -1,9 +1,16 @@
 import React from 'react'
+import Header from '../../components/Header/Header'
+import Background from '../../components/Background/Background'
+import Form from '../../components/FormFakultas/FormFakultas'
+import Footer from "../../components/Footer/Footer"
 
 const FormFakultas = () => {
   return (
     <div>
-        <h1>Form Input Fakultas</h1>
+        <Header />
+        <Background />
+        <Form />
+        <Footer />
     </div>
   )
 }
