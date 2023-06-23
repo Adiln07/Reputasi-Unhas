@@ -1,0 +1,24 @@
+.about h1{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 40px;
+}
+.paragraf{
+    margin-top: 40px;
+    margin-bottom: 100px;
+    width: 80%;
+    padding-left: 40px;
+    text-align: justify;
+    
+}
+
+.paragraf h3{
+    font-size: 30px;
+    width: 41.5%;
+    border-bottom: 5px solid #821415;
+}
+
+.paragraf p{
+    margin-top: 40px;
+    font-size: 25px;
+}

@@ -1,9 +1,16 @@
 import React from 'react'
-
+import Header from "../../components/Header/Header"
+import "../../style/components/About/About.css"
+import TentangKami from '../../components/TentangKami/TentangKami'
+import Footer from '../../components/Footer/Footer'
+import Background from '../../components/Background/Background'
 const About = () => {
   return (
     <div>
-        <h1>About Fakultas</h1>
+      <Header />
+      <Background />
+      <TentangKami />
+      <Footer />
     </div>
   )
 }
