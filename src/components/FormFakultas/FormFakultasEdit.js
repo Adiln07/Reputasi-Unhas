@@ -1,10 +1,11 @@
 import React from "react"
 import "../../style/components/FormFakultas/FormFakultas.css"
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
-const FormFakultas = () =>  {
+
+const FormFakultasEdit = () =>  {
     const [jumlah1, setJumlah1] = useState('');
     const [jumlah2, setJumlah2] = useState('');
     const [jumlah3, setJumlah3] = useState('');
@@ -30,13 +31,17 @@ const FormFakultas = () =>  {
     const [jumlah23, setJumlah23] = useState('');
 
     const navigate = useNavigate();
+    const { id } = useParams();
 
+    useEffect(() => {
+        getUserById();
+      }, []);
 
-    const saveUser = async (e)=>{
+    const updateUser = async (e)=>{
         e.preventDefault();
 
         try{
-            await axios.post("http://localhost:5000/users", {
+            await axios.patch(`http://localhost:5000/users/${id}`, {
         jumlah1,
         jumlah2,
         jumlah3,
@@ -67,6 +72,33 @@ const FormFakultas = () =>  {
         }
     }
 
+    const getUserById = async () => {
+        const response = await axios.get(`http://localhost:5000/users/${id}`);
+        setJumlah1(response.data.jumlah1);
+        setJumlah2(response.data.jumlah2);
+        setJumlah3(response.data.jumlah3);
+        setJumlah4(response.data.jumlah4);
+        setJumlah5(response.data.jumlah5);
+        setJumlah6(response.data.jumlah6);
+        setJumlah7(response.data.jumlah7);
+        setJumlah8(response.data.jumlah8);
+        setJumlah9(response.data.jumlah9);
+        setJumlah10(response.data.jumlah10);
+        setJumlah11(response.data.jumlah11);
+        setJumlah12(response.data.jumlah12);
+        setJumlah13(response.data.jumlah13);
+        setJumlah14(response.data.jumlah14);
+        setJumlah15(response.data.jumlah15);
+        setJumlah16(response.data.jumlah16);
+        setJumlah17(response.data.jumlah17);
+        setJumlah18(response.data.jumlah18);
+        setJumlah19(response.data.jumlah19);
+        setJumlah20(response.data.jumlah20);
+        setJumlah21(response.data.jumlah21);
+        setJumlah22(response.data.jumlah22);
+        setJumlah23(response.data.jumlah23);
+      };
+
     return(
         <div className="wrapper">
             <div className="form__title">
@@ -74,7 +106,7 @@ const FormFakultas = () =>  {
             </div>
             <div className="form__wrapper">
                 <div className="form">
-                    <form onSubmit={saveUser}>
+                    <form onSubmit={updateUser}>
                         <div className="form__subtitle">
                             <h3>Form Pendapatan Fakultas</h3>
                         </div>
@@ -266,7 +298,7 @@ const FormFakultas = () =>  {
                                         onChange={(e)=> setJumlah23(e.target.value)}></input>
                                 </div>
 
-                                <button>Submit</button>                            
+                                <button type="submit">Update</button>                            
                         </div>
                     </form>
                 </div>
@@ -275,4 +307,4 @@ const FormFakultas = () =>  {
     )
 }
 
-export default FormFakultas
+export default FormFakultasEdit
